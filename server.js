@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const stripe = new Stripe("TA_CLE_SECRETE_STRIPE_ICI");
+const stripe = new Stripe("sk_test_51TsiyWBAI89Dj0brube6jCs2PMEyAxkimti6ypJTLXkzi1KrzGKYimrk5CLtdPioSJ1F0iQB15nCDJHaB2hHQls300whfWWOJs");
 
 app.post("/create-checkout-session", async (req, res) => {
   const items = req.body.items;
